@@ -36,7 +36,7 @@ install_deps () {
   # Platforms: linux/arm64, linux/riscv64, linux/ppc64le, linux/s390x,
   #            linux/386, linux/arm/v7, linux/arm/v6
   sudo apt-get update -q -y
-  sudo apt-get -qq install -y qemu qemu-user-static
+  sudo apt-get -qq install -y qemu-user-static
   docker run --rm --privileged multiarch/qemu-user-static --reset -p yes --credential yes
 }
 
